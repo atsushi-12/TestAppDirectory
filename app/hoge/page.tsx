@@ -5,7 +5,7 @@ import React from "react";
 type Props = {
   //props
 };
-const test = () => {
+const page = () => {
   return (
     <div>
       <h1>Test</h1>
@@ -13,4 +13,4 @@ const test = () => {
   );
 };
 
-export default test;
+export default page;
