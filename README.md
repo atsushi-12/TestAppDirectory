@@ -7,7 +7,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## AppDirectory を用いた開発
 
 いままで src/pages に配置していた page コンポーネントは app/"特定のディレクトリ/page.tsx となった。  
-動的ページを作成する際は/articles/[slug]のようなディレクトリを作成し引数に　　```
+動的ページを作成する際は/articles/[slug]のようなディレクトリを作成し引数に　　
+```
 export default function Article({ params }: { params: { slug: string } }) {
 return (
 <div>
@@ -16,6 +17,6 @@ return (
 </div>
 );
 }
-
 ```　　
+
 とよい、なお参照元のサイトにもあるようにpramsの書き方は今後変更される
