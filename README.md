@@ -7,7 +7,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## AppDirectory を用いた開発
 
 いままで src/pages に配置していた page コンポーネントは app/"特定のディレクトリ/page.tsx となった。  
-動的ページを作成する際は/articles/[slug]のようなディレクトリを作成し引数に　　
+動的ページを作成する際は/articles/[slug]のようなディレクトリを作成し引数に
+
 ```
 export default function Article({ params }: { params: { slug: string } }) {
 return (
@@ -18,4 +19,17 @@ return (
 );
 }
 ```
-とよい、なお参照元のサイトにもあるようにpramsの書き方は今後変更される
+
+とよい、なお参照元のサイトにもあるように prams の書き方は今後変更される
+
+## SeverComponents ClientComponents
+
+後日
+
+## フェッチングに関して
+
+以前は api/からエンドポイントを作りそこからフェッチするという流れだったが AppDirectory では ServerComponents の中で`async/await`を使って行うことになっているようだ
+
+## Loading UI に関して
+
+App Router の`loading.tsx`がローディングの UI を表示する役割をしている。どうやら Suspense の挙動に近いようだ
