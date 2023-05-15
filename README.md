@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## 参考にさせていただいているサイト
 
 [Next.js 13 app directory で記事投稿サイトを作ってみよう](https://zenn.dev/azukiazusa/articles/next-js-app-dir-tutorial)
+[GSAPでこんなこともできる！途中から横にスクロールするページを作る方法](https://liginc.co.jp/548232)
 
 ## AppDirectory を用いた開発
 
